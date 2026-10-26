@@ -1,4 +1,0 @@
-int countOdds(int low, int high) {
-    // odd numbers up to high  minus  odd numbers before low
-    return (high + 1) / 2 - low / 2;
-}
