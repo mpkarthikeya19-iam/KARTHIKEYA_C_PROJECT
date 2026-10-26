@@ -1,0 +1,8 @@
+int hammingWeight(int n) {
+    unsigned int x = (unsigned int)n;
+    int count = 0;
+    while (x != 0) {
+        count += x & 1;   // check the last bit
+        x>>= 1;           // shift right by one bit
+    }
+    return count; 
